@@ -7,9 +7,12 @@ Here, I share some of the scripts to help manage some quick tasks using the Kenn
 ### :snake: asset-search-cve.py
 To search an asset by either hostname or IP address.
 
-### connector-history.py :snake"
+### :snake: connector-history.py
 To list all the current connectors and the last sync history. 
 
-### show-meter.py :snake:
+### :diamonds: list-user.rb
+To list all the users.
+
+### :snake: show-meter.py
 To show the current count in a list of meters.
 
