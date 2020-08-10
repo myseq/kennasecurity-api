@@ -4,12 +4,12 @@ This isn't the official scripts from KennaSecurity. The official Kenna Security 
 
 Here, I share some of the scripts to help manage some quick tasks using the Kenna Security RESTful API. For more information, please see: https://api.kennasecurity.com.
 
-### asset-search-cve.py
+### :snake: asset-search-cve.py
 To search an asset by either hostname or IP address.
 
-### connector-history.py
+### connector-history.py :snake"
 To list all the current connectors and the last sync history. 
 
-### show-meter.py
+### show-meter.py :snake:
 To show the current count in a list of meters.
 
