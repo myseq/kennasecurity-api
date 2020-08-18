@@ -10,6 +10,13 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 To search any vulnerability that are belongs to Active Internet breaches, easily exploitable, malware exploitable, popular target and top priority.
 
 
+### :bulb: Unmappable Vulnerability
+```
+    vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1
+```
+To list any unmappable vulnerability. 
+
+
 ### :bulb: Pre-NVD Chatter 
 ```
     cve_description:"This candidate has been reserved"
@@ -19,7 +26,7 @@ To search any threats that are not yet published in NVD or scored in CVSS. This 
 
 ### :bulb: Empty Asset
 ```
-    external_id:"*" AND -_exists_:hostname AND -_exists_:IP AND -_exists_:url
+    -_exists_:hostname AND -_exists_:IP AND -_exists_:url
 ```
 To list those weird assets in Kenna (without hostname, nor IP, nor URL).
 
@@ -50,6 +57,13 @@ To list those vulnerability that without any fix or solution.
     closed_at:>now-45d AND _exists_:due_date AND not_closed_by_due_date:false
 ```
 To list those vulnerabilities that closed within the SLA in the past 45 days. 
+
+
+### :bulb: When SLA is not working (vulnerability without Due Date)
+```
+    -due_date:"*"
+```
+ If SLA is working, every vulnerability should have a due date. This is to list any vulnerability that has no due date. 
 
 
 
