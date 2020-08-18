@@ -1,4 +1,4 @@
-# Tips for KennaSecurity Searches
+# Tips for KennaSecurity Search Syntax
 
 I'm sharing some of my tips that I used to search (and create meters) in KennaSecurity. Here, you will find some tips that not available in KennaSecurity help pages.
 
