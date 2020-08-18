@@ -16,3 +16,7 @@ To list all the users.
 ### :open_file_folder: show-meter.py :snake:
 To show the current count in a list of meters.
 
+### :open_file_folder: tips
+Some tips on KennaSecurity search syntax.
+
+
