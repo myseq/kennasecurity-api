@@ -11,10 +11,10 @@ To search any vulnerability that are belongs to Active Internet breaches, easily
 
 
 ### :bulb: Unmappable Vulnerability
-```json
+To list any unmappable vulnerability. 
+```sql
     vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1
 ```
-To list any unmappable vulnerability. 
 
 
 ### :bulb: Unmappable Vulnerability
@@ -23,8 +23,8 @@ To list any unmappable vulnerability.
 
 
 
-| ### :bulb: Unmappable Vulnerability |
-| --- |
+| ### :bulb: Unmappable Vulnerability | |
+| --- | |
 | To list any unmappable vulnerability.  |
 | Syntax | vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1 |
 
