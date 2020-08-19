@@ -47,14 +47,14 @@ To list those asset that with no OS.
 
 ### :bulb: Vulnerability without Fix
 To list those vulnerability that without any fix or solution.
-```python
+```sql
     -_exists_:fix AND vulnerability_score:>0 
 ```
 
 
 ### :bulb: Vulnerabilities closed within SLA 
 To list those vulnerabilities that closed within the SLA in the past 45 days. 
-```json
+```sql
     closed_at:>now-45d AND _exists_:due_date AND not_closed_by_due_date:false
 ```
 
