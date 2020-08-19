@@ -4,73 +4,73 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 
 
 ### :bulb: Active_breach/Easily_exploit/Malware/Popular/Top_priority
-```
+To search any vulnerability that are belongs to Active Internet breaches, easily exploitable, malware exploitable, popular target and top priority.
+```sql
     active_internet_breach:true AND easily_exploitable:true AND malware_exploitable:true AND popular_target:true AND top_priority:true
 ```
-To search any vulnerability that are belongs to Active Internet breaches, easily exploitable, malware exploitable, popular target and top priority.
 
 
 ### :bulb: Unmappable Vulnerability
-```
+To list any unmappable vulnerability. 
+```sql
     vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1
 ```
-To list any unmappable vulnerability. 
 
 
 ### :bulb: Pre-NVD Chatter 
-```
+To search any threats that are not yet published in NVD or scored in CVSS. This can help us to manage newly disclosed vulnerabilities, even before they're published on the National Vulnerability Database (NVD), so we can proactively managing the vulnerabilties.
+```sql
     cve_description:"This candidate has been reserved"
 ```
-To search any threats that are not yet published in NVD or scored in CVSS. This can help us to manage newly disclosed vulnerabilities, even before they're published on the National Vulnerability Database (NVD), so we can proactively managing the vulnerabilties.
 
 
 ### :bulb: Empty Asset
-```
+To list those weird assets in Kenna (without hostname, nor IP, nor URL).
+```sql
     -_exists_:hostname AND -_exists_:IP AND -_exists_:url
 ```
-To list those weird assets in Kenna (without hostname, nor IP, nor URL).
 
 
 ### :bulb: Empty TAG 
-```
+To list those asset that has no tag at all. 
+```sql
     -tag:"*"
 ```
-To list those asset that has no tag at all. 
 
 
 ### :bulb: Empty OS 
-```
+To list those asset that with no OS.
+```sql
     -os:?*
 ```
-To list those asset that with no OS.
 
 
 ### :bulb: Vulnerability without Fix
-```
+To list those vulnerability that without any fix or solution.
+```sql
     -_exists_:fix AND vulnerability_score:>0 
 ```
-To list those vulnerability that without any fix or solution.
 
 
 ### :bulb: Vulnerabilitiies closed within SLA 
-```
+To list those vulnerabilities that closed within the SLA in the past 45 days. 
+```sql
     closed_at:>now-45d AND _exists_:due_date AND not_closed_by_due_date:false
 ```
-To list those vulnerabilities that closed within the SLA in the past 45 days. 
 
 
 ### :bulb: Check if SLA is working (vulnerability without Due Date)
-```
+If SLA is working fine, every vulnerability should have a due date. This is to list any vulnerability that has no due date. 
+```sql
     -due_date:"*"
 ```
- If SLA is working fine, every vulnerability should have a due date. This is to list any vulnerability that has no due date. 
 
 
 ### :bulb: Vulnererability older than Asset Last Seen
-```
+Assuming your "Asset Inactivity Limit" (within Asset Settings) is set to 31 days, this syntax here is to find out any vulnerability is older than asset's last seen date. This useful to find out those vulnerabilities that not closed by KennaSecurity automatically. It can be used to discover if the asset has been scanned correctly (with credential) or not.
+```sql
     vulnerability_last_seen:<now-31d
 ```
-Assuming your "Asset Inactivity Limit" (within Asset Settings) is set to 31 days, this syntax here is to find out any vulnerability is older than asset's last seen date. This useful to find out those vulnerabilities that not closed by KennaSecurity automatically. It can be used to discover if the asset has been scanned correctly (with credential) or not.
 
 
 
