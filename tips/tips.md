@@ -4,18 +4,31 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 
 
 ### :bulb: Active_breach/Easily_exploit/Malware/Popular/Top_priority
-```
+```sql
     active_internet_breach:true AND easily_exploitable:true AND malware_exploitable:true AND popular_target:true AND top_priority:true
 ```
 To search any vulnerability that are belongs to Active Internet breaches, easily exploitable, malware exploitable, popular target and top priority.
 
 
 ### :bulb: Unmappable Vulnerability
-```
+```json
     vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1
 ```
 To list any unmappable vulnerability. 
 
+
+### :bulb: Unmappable Vulnerability
+To list any unmappable vulnerability. 
+>  vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1
+
+
+
+| ### :bulb: Unmappable Vulnerability |
+| --- |
+| To list any unmappable vulnerability.  |
+| Syntax | vulnerability_name:"Unmappable Vulnerability" AND vulnerability_score:>1 |
+
+# GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 
 ### :bulb: Pre-NVD Chatter 
 ```
