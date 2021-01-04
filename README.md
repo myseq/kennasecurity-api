@@ -11,11 +11,15 @@ Note that, before you start, you have to obtain a 64 bytes API key as a token fr
 4. (I tried "echo zxcasder....ABCdef123890 > token.api" and it just don't work)
 
 
-### :octocat: asset-search-cve.py :snake:
-To search an asset by either hostnames or IP address. This is useful for searching assets with matching CVE. 
+### :octocat: search-assets.py :snake:
+> To search an asset by either hostnames or IP address. This is useful for searching assets with matching CVE. 
 
-### :octocat: connector-history.py :snake:
+![search-assets.py](screenshots/search-assets.png)
+
+### :octocat: kenna-connectors.py :snake:
 > To list all the current connectors and the last sync history. This is useful to show all the success/failure syncs for all connectors.
+
+![kenna-connectors.py](screenshots/kenna-connectors.png)
 
 ### :octocat: kenna-cve :snake: (win32)
 > To query the number of vulnerable hosts (and vulnerabilites) based on CVE ID.
@@ -28,10 +32,10 @@ To search an asset by either hostnames or IP address. This is useful for searchi
 ![kenna-status.py](screenshots/kenna-status.png)
 
 ### :octocat: list-user.rb :gem::
-To list all the users. This is useful to obtain a list of users including YOURSELVES. It is strange enough that KennaSecurity can never show yourself in the GUI.
+> To list all the users. This is useful to obtain a list of users including YOURSELVES. It is strange enough that KennaSecurity can never show yourself in the GUI.
 
 ### :octocat: show-meter.py :snake:
-To show the current count in a list of meters.
+> To show the current count in a list of meters.
 
 ### :open_file_folder: tips
 > Some tips on KennaSecurity search syntax.
