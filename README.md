@@ -27,8 +27,8 @@ Some the scripts are programmed to create concurrent connections to Kenna. And b
 
 ![kenna-cve-win.exe](screenshots/kenna-cve.png)
 
-### :octocat: kenna-status :snake:
-> To check the KennaSecurity status at https://status.kennasecurity.com
+### :octocat: kenna-status / kenna-status-win :snake:
+> To check the KennaSecurity status at https://status.kennasecurity.com for the past 90 days.
 
 ![kenna-status.py](screenshots/kenna-status.png)
 
