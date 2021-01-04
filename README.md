@@ -32,10 +32,17 @@ Note that, before you start, you have to obtain a 64 bytes API key as a token fr
 ![kenna-status.py](screenshots/kenna-status.png)
 
 ### :octocat: list-user.rb :gem::
-> To list all the users. This is useful to obtain a list of users including YOURSELVES. It is strange enough that KennaSecurity can never show yourself in the GUI.
+> Useful for Kenna administrator to list all the users. This is useful to obtain a list of users including YOURSELVES. It is strange enough that KennaSecurity can never show yourself in the GUI.
 
-### :octocat: show-meter.py :snake:
-> To show the current count in a list of meters.
+### :octocat: kenna-user.py :snake:
+> Same as list-users.rb. 
+
+![kenna-users.py](screenshots/kenna-users.png)
+
+### :octocat: kenna-meters.py :snake:
+> Useful for Kenna administrator to show the current count in a list of meters. With verbose output, it will show all the search parameters. This is useful for documentation purpose.
+
+![kenna-meters.py](screenshots/kenna-meters.png)
 
 ### :open_file_folder: tips
 > Some tips on KennaSecurity search syntax.
