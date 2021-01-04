@@ -24,11 +24,13 @@ Some the scripts are programmed to create concurrent connections to Kenna. And b
 
 ### :octocat: kenna-cve :snake: (win32)
 > To query the number of vulnerable hosts (and vulnerabilites) based on CVE ID.
+> Uploaded win32 binary copy for sharing.
 
 ![kenna-cve-win.exe](screenshots/kenna-cve.png)
 
-### :octocat: kenna-status / kenna-status-win :snake:
+### :octocat: kenna-status / kenna-status-win (win32) :snake:
 > To check the KennaSecurity status at https://status.kennasecurity.com for the past 90 days.
+> Uploaded win32 binary copy for sharing.
 
 ![kenna-status.py](screenshots/kenna-status.png)
 
