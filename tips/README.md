@@ -2,6 +2,11 @@
 
 I'm sharing some of my tips that I used to search (and create meters) in KennaSecurity. Here, you will find some tips that not available in KennaSecurity help pages.
 
+### :bulb: Kenna Score
+![Kenna Score](Kenna-Score.md)
+
+### :bulb: Excluding asset from the meter score 
+> Sometimes you need to exclude some assets from participating in the (average) Kenna meter score, but you still like those asset to be shown in the same Kenna meter. Just set the (individual) asset priority to 0, and the Kenna meter score won't take into account for those asset (with priority 0). This is a handy way to manage the Kenna meter score without making big change.
 
 ### :bulb: Active_breach/Easily_exploit/Malware/Popular/Top_priority
 > To search any vulnerability that are belongs to Active Internet breaches, easily exploitable, malware exploitable, popular target and top priority.

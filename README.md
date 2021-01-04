@@ -10,7 +10,7 @@ Note that, before you start, you have to obtain a 64 bytes API key as a token fr
 3. At the command prompt, type " ren token.txt token.api".
 4. (I tried "echo zxcasder....ABCdef123890 > token.api" and it just don't work)
 
-Some the scripts are programmed to create concurrent connections to Kenna. And by default, it is hardcoded to 5 concurrent connections.
+Some the scripts are programmed to create concurrent connections to Kenna. And by default, it is hardcoded to 5 concurrent connections. Due to restriction on company intellectual properties, those source code will be shared only if it doesn't depends on Kenna Token.
 
 ### :octocat: search-assets.py :snake:
 > To search an asset by either hostnames or IP address. This is useful for searching assets with matching CVE. 
