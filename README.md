@@ -17,15 +17,15 @@ To search an asset by either hostnames or IP address. This is useful for searchi
 ### :octocat: connector-history.py :snake:
 > To list all the current connectors and the last sync history. This is useful to show all the success/failure syncs for all connectors.
 
-### :octocat: kenna-cve :snake:
-> To query the number of vulnerable hosts (and vulnerabilites) based on CVE
-> Sample:
+### :octocat: kenna-cve :snake: (win32)
+> To query the number of vulnerable hosts (and vulnerabilites) based on CVE ID.
 
-![kenna-cve.exe](screenshots/kenna-cve.png)
+![kenna-cve-win.exe](screenshots/kenna-cve.png)
 
 ### :octocat: kenna-status :snake:
 > To check the KennaSecurity status at https://status.kennasecurity.com
-> Sample:
+
+![kenna-status.py](screenshots/kenna-status.png)
 
 ### :octocat: list-user.rb :gem::
 To list all the users. This is useful to obtain a list of users including YOURSELVES. It is strange enough that KennaSecurity can never show yourself in the GUI.
