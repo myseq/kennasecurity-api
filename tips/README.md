@@ -78,4 +78,16 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 ```
 
 
+e## :bulb: Vulnererability older than Asset Last Seen
+> Assuming your "Asset Inactivity Limit" (within Asset Settings) is set to 31 days, this syntax here is to find out any vulnerability is older than asset's last seen date. This useful to find out those vulnerabilities that not closed by KennaSecurity automatically. It can be used to discover if the asset has been scanned correctly (with credential) or not.
+```sql
+    vulnerability_last_seen:<now-31d
+```
+
+### :bulb: Vulnerability that could be exploited in the near future (hidden)
+> If you want to be more aggresive in prioritizing your vulnerability remediation, this is a useful (hidden) feature for you. For normal remediation, we can prioritize the remediation based on exploitability. With this option, we can filter those vulnerabilities that may potentially be exploitable in the future. This is based on Kenna proprietary algorithm. 
+```sql
+    predicted_exploitable:true
+```
+
 
