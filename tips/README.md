@@ -78,7 +78,7 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 ```
 
 
-e## :bulb: Vulnererability older than Asset Last Seen
+### :bulb: Vulnererability older than Asset Last Seen
 > Assuming your "Asset Inactivity Limit" (within Asset Settings) is set to 31 days, this syntax here is to find out any vulnerability is older than asset's last seen date. This useful to find out those vulnerabilities that not closed by KennaSecurity automatically. It can be used to discover if the asset has been scanned correctly (with credential) or not.
 ```sql
     vulnerability_last_seen:<now-31d
