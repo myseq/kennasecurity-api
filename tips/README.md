@@ -1,9 +1,9 @@
 # Tips for KennaSecurity Search Syntax
 
-I'm sharing some of my tips that I used to search (and create meters) in KennaSecurity. Here, you will find some tips that not available in KennaSecurity help pages.
+I'm sharing some of my tips that I used to search (and create meters) in KennaSecurity. Here, you will find some tips that not available in KennaSecurity help pages. Kenna Search Term, is based on [Apache Lucene](https://lucene.apache.org/), and the supported searh term can be found at [Kenna Search Terms](https://help.kennasecurity.com/hc/en-us/articles/206280593). 
 
 ### :bulb: Kenna Score
-> Quick tips on how [Kenna Score](Kenna-Score.md) works!
+> Quick notes on how [Kenna Score](Kenna-Score.md) works!
 
 ### :bulb: Excluding asset from the meter score 
 > Sometimes you need to exclude some assets from participating in the (average) Kenna meter score, but you still like those asset to be shown in the same Kenna meter. Just set the (individual) asset priority to 0, and the Kenna meter score won't take into account for those asset (with priority 0). This is a handy way to manage the Kenna meter score without making big change.
