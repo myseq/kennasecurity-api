@@ -64,6 +64,13 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 ```
 
 
+### :bulb: Vulnerabilities without CVSS score 
+> To list those vulnerabilities with empty CVSS score (most lilkely due to mis-configuration).
+```sql
+    -cvss_severity:"*"
+```
+
+
 ### :bulb: Check if SLA is working (vulnerability without Due Date)
 > If SLA is working fine, every vulnerability should have a due date. This is to list any vulnerability that has no due date. 
 ```sql
