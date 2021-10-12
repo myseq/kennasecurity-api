@@ -91,6 +91,14 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
     vulnerability_last_seen:<now-31d
 ```
 
+### :bulb: Vulnerability that could be exploited remotely
+> This is to list out all the vulnerabilties with remote code execution. You will see a special "Remote Code Execution" tag (in red) below the CVE. It is useful for prioritizing the remediation.
+```sql
+    cve_description:"remote code execution" 
+    cve_description:"remote code execution" AND vulnerability_score:>=20
+```
+
+
 ### :bulb: Vulnerability that could be exploited in the near future (hidden)
 > If you want to be more aggresive in prioritizing your vulnerability remediation, this is a useful (hidden) feature for you. For normal remediation, we can prioritize the remediation based on exploitability. With this option, we can filter those vulnerabilities that may potentially be exploitable in the future. This is based on Kenna proprietary algorithm. 
 ```sql
