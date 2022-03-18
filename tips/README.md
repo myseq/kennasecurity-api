@@ -37,9 +37,10 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 
 
 ### :bulb: Empty TAG 
-> To list those asset that has no tag at all. 
+> To list those asset that has no tag at all. This is useful to track down if any asset is beeing added to Kenna meter or not.
 ```sql
     -tag:"*"
+    -_exists_:tag 
 ```
 
 
