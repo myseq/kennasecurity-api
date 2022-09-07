@@ -106,4 +106,12 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
     predicted_exploitable:true
 ```
 
-
+### :bulb: Vulnerabilities with a high CVSS score
+> Both `cvss_v2_score` and `cvss_v3_score` parameters are newly added in Aug 2022. According to Kenna's article, below is the syntax for vulnerabilities with high CVSSS score. However, the syntax below will produce a blind spot in searching any CVE released before 2015 or after 2022-08, which may only contain either CVSS v2 or CVSS v3 score.
+```sql
+    cvss_v2_score:>=7 AND cvss_v3_score:>=7
+```
+> Supposedly the syntax should be `cvss_v2_score:>=7 OR cvss_v3_score:>=7`. But this is prohibited in Kenna syntax format. One of the possible solution to search any CVE with high CVSS score could be:
+```sql
+    cvss_v2_score:>=7 AND -cvss_v3_score:<7 
+```
