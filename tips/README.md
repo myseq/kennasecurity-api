@@ -115,3 +115,10 @@ I'm sharing some of my tips that I used to search (and create meters) in KennaSe
 ```sql
     cvss_v2_score:>=7 AND -cvss_v3_score:<7 
 ```
+
+### :bulb: Closed Vulnerability but overdue
+> First, need to change the `Status` to `all`. The we can search any closed vulnerability that is overdue (closed after the due_date).
+> In this example below, I just filter with all the Microsoft CVE that belongs to year 2024.
+```sql
+    status:closed AND not_closed_by_due_date:true AND scanner_id:"msft-cve-2024-*"
+```
